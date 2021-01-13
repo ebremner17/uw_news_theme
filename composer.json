@@ -1,0 +1,7 @@
+{
+    "name": "ebremner17/uw_news_theme",
+    "description": "Theme for UW news.",
+    "type": "drupal-custom-theme",
+    "homepage": "https://github.com/ebremner17/uw_news_theme",
+    "keywords": ["Drupal"]
+}

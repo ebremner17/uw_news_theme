@@ -1,0 +1,15 @@
+name: UW News
+type: theme
+description: Theme for UW news.
+base theme: bartik
+core_version_requirement: ^9
+
+libraries:
+  - core/normalize
+  - uw_news_theme/global-styling
+
+regions:
+  header: Header
+  highlighted: Highlighted
+  content: Content  # the content region is required
+  footer: Footer

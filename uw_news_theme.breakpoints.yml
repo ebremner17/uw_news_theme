@@ -1,0 +1,15 @@
+uw_news_theme.xsmall:
+  label: Extra Small
+  mediaQuery: 'all and (min-width: 20em)'
+uw_news_theme.small:
+  label: Small
+  mediaQuery: 'all and (min-width: 30em)'
+uw_news_theme.medium:
+  label: Medium
+  mediaQuery: 'all and (min-width: 48em)'
+uw_news_theme.large:
+  label: Large
+  mediaQuery: 'all and (min-width: 64em)'
+uw_news_theme.xlarge:
+  label: Extra large
+  mediaQuery: 'all and (min-width: 80em)'
