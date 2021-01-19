@@ -1,3 +1,12 @@
 <footer class="uw-footer" role="contentinfo">
-
+  <div class="uw-footer__info">
+    UW customizable news feed.
+  </div>
+  <div class="uw-footer__login">
+    {% if logged_in %}
+      <a href="{{ url('<front>') }}/user/logout">Logout</a>
+    {% else %}
+      <a href="{{ url('<front>') }}/user/login">Login</a>
+    {% endif %}
+  </div>
 </footer>

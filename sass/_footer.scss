@@ -2,7 +2,29 @@
   background-color: #000;
   color: #ffffff;
   margin-top: 0;
-  padding: 0;
+  padding: 1rem 0;
   width: 100%;
   min-height: 200px;
+  display: grid;
+  grid-template-columns: 100%;
+
+  @include medium {
+    @include uw-contained-width;
+    grid-template-columns: 50% 50%;
+  }
+
+  &__info {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  &__login {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+
+    @include medium {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+    }
+  }
 }
