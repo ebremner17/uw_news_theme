@@ -1,0 +1,15 @@
+<div class="uw-site-container" {%  if is_demo %}{{ faculty }}{% endif %}>
+  {% include "@uw_news_theme/region/region--header.html.twig"%}
+
+  {% if page.highlighted %}
+    <div class="highlighted">
+      <aside class="layout-container section clearfix" role="complementary">
+        {{ page.highlighted }}
+      </aside>
+    </div>
+  {% endif %}
+
+  {% include "@uw_news_theme/layout/content/content.html.twig" %}
+
+  {% include "@uw_news_theme/region/region--footer.html.twig" %}
+</div>

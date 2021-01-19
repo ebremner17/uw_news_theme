@@ -1,0 +1,45 @@
+.uw-colour-bar__cbars {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.uw-colour-bar__cbar {
+  -webkit-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: 0.625rem;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: 48em) {
+    height: 0.875rem;
+  }
+
+  @media screen and (min-width: 64em) {
+    height: 1rem;
+  }
+
+  @media screen and (min-width: 80em) {
+    height: 1.125rem;
+  }
+}
+
+.org-default__uw-gold--lvl1 {
+  background-color: #fffaaa;
+}
+
+.org-default__uw-gold--lvl2 {
+  background-color: #ffea30;
+}
+
+.org-default__uw-gold--lvl3 {
+  background-color: #fdd54f;
+}
+
+.org-default__uw-gold--lvl4 {
+  background-color: #e4b429;
+}

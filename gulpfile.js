@@ -1,3 +1,6 @@
+const sass = require('gulp-sass');
+const sassGlobImporter = require('node-sass-glob-importer');
+
 var pkg = require('./package.json'),
   gulp = require('gulp'),
   glob = require('glob'),
@@ -28,6 +31,13 @@ function scripts() {
 function styles() {
   return gulp.src(config.sassSrc)
     .pipe(plugins.plumber())
+    .pipe(
+      sass({
+        includePaths: ['./node_modules/breakpoint-sass/stylesheets'],
+        precision: 10,
+        importer: sassGlobImporter()
+      })
+    )
     .pipe(plugins.sass({
       includePaths: require('node-bourbon').includePaths,
       outputStyle: 'collapsed'

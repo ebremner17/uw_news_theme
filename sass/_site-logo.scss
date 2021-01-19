@@ -1,0 +1,24 @@
+.uw-site-logo {
+  width:8rem;
+
+  @media screen and (min-width: 20em) {
+    width:12.5rem;
+  }
+
+  .uw-site-logo__link{
+    background: url('../images/logos/uwaterloo-logo.svg') 0 50% no-repeat;
+    background-color: #000000;
+    background-size: contain;
+    color: #000000;
+    display: block;
+    height: 100%;
+
+    @media screen and (min-width: 20em) {
+      height: 2.5rem;
+    }
+
+    text-align:center;
+    text-indent: -999rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+@import "breakpoint";
+
+@include breakpoint-set('to ems', true);
+
+// Breakpoints variables
+$main-menu-medium: 43rem;
+$xs: 30rem;
+$small: 40.06rem;
+$medium: 48.06rem;
+$large: 63.1875rem;
+$xl: 75rem;
+$xxl: 102.5rem;
+$onek: 120rem;
+$twok: 159.93rem;
+$max-width: $xl;
+
+/// Mixin - xs Breakpoint
+/// Allows easier @include xs {} syntax
+@mixin xs {
+  @include breakpoint($xs) {
+    @content;
+  }
+}
+
+/// Mixin - small Breakpoint
+/// Allows easier @include small {} syntax
+@mixin small {
+  @include breakpoint($small) {
+    @content;
+  }
+}
+
+/// Mixin - medium Breakpoint
+/// Allows easier @include medium {} syntax
+@mixin medium {
+  @include breakpoint($medium) {
+    @content;
+  }
+}
+
+/// Mixin - large Breakpoint
+/// Allows easier @include large {} syntax
+@mixin large {
+  @include breakpoint($large) {
+    @content;
+  }
+}
+
+/// Mixin - xl Breakpoint
+/// Allows easier @include xl {} syntax
+@mixin xl {
+  @include breakpoint($xl) {
+    @content;
+  }
+}
+
+/// Mixin - xl Breakpoint
+/// Allows easier @include xxl {} syntax
+@mixin xxl {
+  @include breakpoint($xxl) {
+    @content;
+  }
+}
+
+/// Mixin - xl Breakpoint
+/// Allows easier @include onek {} syntax
+@mixin onek {
+  @include breakpoint($onek) {
+    @content;
+  }
+}
+
+/// Mixin - xl Breakpoint
+/// Allows easier @include twok {} syntax
+@mixin twok {
+  @include breakpoint($twok) {
+    @content;
+  }
+}
+/// Mixin - max-width Breakpoint
+/// Allows easier @include max-width {} syntax
+@mixin max-width {
+  @include breakpoint($max-width) {
+    @content;
+  }
+}

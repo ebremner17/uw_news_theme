@@ -1,0 +1,10 @@
+{% set lvls = 4 %}
+<div class="uw-colour-bar">
+  <div class="uw-colour-bar__wrapper">
+    <div class="uw-colour-bar__cbars">
+      {% for lvl in range(1,lvls) %}
+        <div class="uw-colour-bar__cbar org-default__uw-gold--lvl{{ lvl }}"></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
